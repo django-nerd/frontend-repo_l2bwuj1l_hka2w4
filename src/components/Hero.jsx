@@ -34,7 +34,7 @@ export default function Hero({ reducedMotion, onToggleReducedMotion }) {
     <section id="home" className="relative min-h-screen w-full overflow-hidden bg-gradient-to-b from-slate-900 via-slate-900 to-slate-950 text-white">
       <div className="absolute inset-0">
         <Spline
-          scene="https://prod.spline.design/VJLoxp84lCdVfdZu/scene.splinecode"
+          scene="https://prod.spline.design/qQUip0dJPqrrPryE/scene.splinecode"
           onLoad={() => setLoaded(true)}
           style={{ width: '100%', height: '100%' }}
         />
@@ -49,7 +49,7 @@ export default function Hero({ reducedMotion, onToggleReducedMotion }) {
           className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs text-white/80 backdrop-blur"
         >
           <Rocket className="h-3.5 w-3.5 text-teal-300" />
-          <span>Animated Developer Portfolio</span>
+          <span>Shiva Dumpeti · Software Engineering</span>
         </motion.div>
 
         <motion.h1
@@ -58,7 +58,7 @@ export default function Hero({ reducedMotion, onToggleReducedMotion }) {
           animate={loaded ? 'visible' : 'hidden'}
           className="mt-5 text-4xl font-bold leading-[1.1] sm:text-6xl"
         >
-          Building playful, high-performance web experiences
+          Building reliable, open, and scalable solutions
         </motion.h1>
 
         <motion.p
@@ -67,11 +67,12 @@ export default function Hero({ reducedMotion, onToggleReducedMotion }) {
           animate={loaded ? 'visible' : 'hidden'}
           className="mx-auto mt-4 max-w-2xl text-white/80"
         >
-          Front-end engineer + product designer focused on meaningful motion, accessibility, and measurable outcomes.
+          Innovative, detail‑oriented engineer focused on Python, cloud infrastructure, and open‑source. Strong in debugging,
+          feature development, and collaborative workflows. Learning RHEL, OpenShift, and Ansible.
         </motion.p>
 
         <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
-          {['React', 'TypeScript', 'Framer Motion', 'Three.js', 'Tailwind'].map((tag, i) => (
+          {['Python', 'PyTorch', 'TensorFlow', 'Pandas', 'SQL', 'OpenCV', 'Git & Agile'].map((tag, i) => (
             <motion.span
               key={tag}
               custom={i}
@@ -116,6 +117,15 @@ export default function Hero({ reducedMotion, onToggleReducedMotion }) {
             {actuallyReduce ? 'Enable Motion' : 'Reduce Motion'}
           </button>
         </div>
+
+        <motion.p
+          variants={titleVariants}
+          initial="hidden"
+          animate={loaded ? 'visible' : 'hidden'}
+          className="mt-6 text-xs text-white/60"
+        >
+          +91 8919719299 · shivadumpeti2002@gmail.com · linkedin.com/in/shiva-dumpeti-5684292bb · GitHub
+        </motion.p>
       </div>
     </section>
   );

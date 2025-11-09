@@ -2,7 +2,6 @@ import { useState } from 'react';
 import Hero from './components/Hero';
 import Experience from './components/Experience';
 import Projects from './components/Projects';
-import Skills from './components/Skills';
 import Contact from './components/Contact';
 
 function App() {
@@ -17,11 +16,10 @@ function App() {
       <main>
         <Projects reducedMotion={reducedMotion} />
         <Experience reducedMotion={reducedMotion} />
-        <Skills reducedMotion={reducedMotion} />
         <Contact />
       </main>
       <footer className="mx-auto max-w-6xl px-6 py-10 text-center text-xs text-white/60">
-        © {new Date().getFullYear()} Your Name — Built with React, Tailwind, and Framer Motion.
+        © {new Date().getFullYear()} Shiva Dumpeti — Built with React, Tailwind, and Framer Motion.
       </footer>
     </div>
   );

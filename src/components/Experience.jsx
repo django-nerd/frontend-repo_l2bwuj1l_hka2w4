@@ -4,23 +4,24 @@ import { ChevronDown } from 'lucide-react';
 
 const experiences = [
   {
-    role: 'Senior Front-end Engineer',
-    company: 'Acme Labs',
-    time: '2022 — Present',
+    role: 'Software Development Intern',
+    company: 'Bluestock Fintech',
+    time: 'Aug 2025 – Oct 2025',
     impact: [
-      'Led redesign with motion-first system, boosting demo-to-trial by 28%',
-      'Built component library with accessibility baked-in (WCAG AA)',
-      'Improved LCP by 35% via image/CDN strategy and code-splitting',
+      'Built secure company registration & verification with React, Node.js, PostgreSQL',
+      'Implemented multi-step UI with MUI + React Hook Form; integrated Firebase Auth & JWT',
+      'Managed media uploads with Cloudinary; validated endpoints and added tests',
+      'Collaborated in Agile, authored documentation for scalable deployment',
     ],
   },
   {
-    role: 'Product Designer',
-    company: 'Nimbus Cloud',
-    time: '2020 — 2022',
+    role: 'Data Analytics & Visualization Intern (Virtual)',
+    company: 'Accenture (Forage)',
+    time: 'May 2024 – Sep 2024',
     impact: [
-      'Shipped dashboard with meaningful motion cues → -22% task time',
-      'Co-led UX research; converted insights into design tokens and patterns',
-      'Partnered with eng to implement Framer Motion micro-interactions',
+      'Cleaned and analyzed customer datasets to uncover insights',
+      'Built Power BI dashboards to track KPIs and trends',
+      'Presented findings and recommendations to stakeholders',
     ],
   },
 ];

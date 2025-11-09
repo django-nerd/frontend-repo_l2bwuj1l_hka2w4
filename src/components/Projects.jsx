@@ -4,17 +4,17 @@ import { ExternalLink, Github } from 'lucide-react';
 
 const projects = [
   {
-    title: 'Artificial Intelligence Crime',
-    desc: 'Interactive research microsite exploring AI-enabled fraud patterns with visuals and case studies.',
-    stack: ['Next.js', 'Three.js', 'Framer Motion'],
+    title: 'AI Crime Detection System',
+    desc: 'Real-time detection of deepfakes, phishing, and anomalous behavior using Python, Django, and PyTorch (92% accuracy).',
+    stack: ['Python', 'Django', 'PyTorch', 'NLP', 'REST API'],
     demo: '#',
     repo: '#',
     media: 'https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExZm1rOHFqdnA1cHg4cXAzbWt2a3FqZ2ZyZjAyNTR5aDlzOHk1d2lqNyZlcD12MV9naWZzX3NlYXJjaCZjdD1n/3o6fJ8bQXoS2Z0E3KM/giphy.gif',
   },
   {
-    title: 'Motion Component Kit',
-    desc: 'Reusable motion primitives for dashboards and marketing sites.',
-    stack: ['React', 'Framer Motion', 'Tailwind'],
+    title: 'Fintech Registration & KYC',
+    desc: 'Secure company onboarding with React, Node.js, PostgreSQL, Firebase Auth, JWT, and Cloudinary.',
+    stack: ['React', 'Node.js', 'PostgreSQL', 'Firebase', 'Cloudinary'],
     demo: '#',
     repo: '#',
     media: 'https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExa3A3cGd3M2R0N3NnMWNkaTg3eDk2Nmt1djNxZnNodGJ2aG1xY2JmMSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/l0MYC0LajbaPoEADu/giphy.gif',
@@ -29,13 +29,15 @@ export default function Projects({ reducedMotion }) {
       <div className="flex items-end justify-between gap-4">
         <div>
           <h2 className="text-3xl font-bold">Projects</h2>
-          <p className="mt-2 text-white/70">Interactive cards with reveal-on-hover and details on tap.</p>
+          <p className="mt-2 text-white/70">Two flagship builds with motion previews and tech badges.</p>
         </div>
-        <div className="hidden gap-2 md:flex">
+        <div className="hidden gap-2 md:flex" role="tablist" aria-label="Project selector">
           {projects.map((p, i) => (
             <button
               key={p.title}
               onClick={() => setActive(i)}
+              role="tab"
+              aria-selected={active === i}
               className={`rounded-full px-3 py-1 text-sm ${active === i ? 'bg-teal-400 text-slate-900' : 'bg-white/5 text-white/80'}`}
             >
               {i + 1}
@@ -54,7 +56,7 @@ export default function Projects({ reducedMotion }) {
             className="group relative overflow-hidden rounded-2xl border border-white/10 bg-white/5 shadow-lg backdrop-blur"
           >
             <div className="relative h-52 overflow-hidden">
-              <img src={p.media} alt="Project preview" className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" />
+              <img src={p.media} alt={`${p.title} preview`} className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" />
               <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-slate-900/80 to-transparent" />
             </div>
 
